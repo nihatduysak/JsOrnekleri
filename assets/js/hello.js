@@ -103,4 +103,9 @@ console.log(12.5)
 
 console.clear();
 
-console.log("Projede güncelleme yapıp git'e atıyorum")
+console.log("Projede güncelleme yapıp git'e atıyorum");
+
+// güncelleme yaptıktan sonra ;
+// 1- git add .
+// 2- git commit -m "commit mesajı buraya yazılacak"
+// 3- git push 
