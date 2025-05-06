@@ -102,3 +102,5 @@ console.log(12.5)
 // Number = numara
 
 console.clear();
+
+console.log("Projede güncelleme yapıp git'e atıyorum")
