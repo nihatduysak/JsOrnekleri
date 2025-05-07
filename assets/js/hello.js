@@ -101,7 +101,6 @@ console.log(12.5)
 // ikisinide ayrıstırılmaksızın tip olarak Number olur
 // Number = numara
 
-console.clear();
 
 console.log("Projede güncelleme yapıp git'e atıyorum");
 
@@ -109,3 +108,148 @@ console.log("Projede güncelleme yapıp git'e atıyorum");
 // 1- git add .
 // 2- git commit -m "commit mesajı buraya yazılacak"
 // 3- git push 
+
+
+// numaralar üzerinde matematik operatörlerini kullanabiliriz
+// +, -, *, /, %
+
+console.log(4 + 6);
+console.log(5 * 4);
+
+console.log(((4 + 8) * 12) / ((40 * 15) * 25) - 50);
+
+console.clear();
+
+
+// programlama dillerinde parantezler işlem önceliğini değiştirir
+
+// prompt('Adınız nedir ?');
+
+// console.log(prompt('Adınız nedir ?'));
+// console.log('Merhaba ' + prompt('Adınız nedir ?'));
+
+// Veri Dönüştürme
+
+// rakamı metne dönüştürme kısmını pek dert etmeyiz, çok fazla ihtiyacımız olmaz
+
+// prompt veya form elemanları (inputlar) bize her zaman string verir
+// string olan veriyi matematik işlemi yapmak için
+// numaraya (number) çevirmemiz gerekiyor
+
+// css'te olduğu gibi büyük küçük harf duyarlılığı var
+// JS case sensitive bir dildir. 
+
+// Number('29') -> number çevirmiş olur
+
+// JS tip dönüştürmeleri -> Sunum -> Gamzenur
+// Number ve parseInt, parseFloat farklılıklarına da değinmeni istiyorum
+
+// console.log(2025 - prompt('Kaç yılında doğdun'));
+
+// JS anormal bir dil olduğu için kendi kendine bazen tipleri değiştiriyor :)
+
+// console.log('Yaşın: ' + (2025 - Number(prompt('Kaç yılında doğdun'))));
+
+// kullanıcı yaşını girsin ve doğum yılını söyleyelim
+
+// console.log('Doğum yılı: ' + (2025 - Number(prompt('Kaç yaşındasın ?'))));
+
+// kullanıcıya şimdiki yılı soralım ve doğum yılınıda soralım
+// kullanıcıya yaşını söyleyelim
+
+// console.log('Senin yaşın: ' + (Number(prompt('Güncel yılı giriniz: ')) - Number(prompt('Doğum yılınızı giriniz:'))));
+
+// Örnek
+
+// Kullanıcya adı ve soyadını soralım
+// hoşgeldin [ad] [soyad] diyelim
+
+// console.log('Hoşgeldiniz: ' + ' ' + prompt('Adınız: ') + ' ' + prompt('Soyadınız: '));
+
+// üsttekine ek olarak doğum yılını soralım ve (yaşını hesaplatacağız)
+// Hoşgeldin [ad] [soyad], şuan [yaş]'ındasın
+
+// console.log('Hoşgeldin:' + ' ' + prompt('Adınız: ') + ' ' + prompt('Soyadınız: ') + (2025 - Number(prompt('Kaç yılında doğdun?'))) + ' ' + 'yaşındasın');
+
+// Kullanıcıdan sınav notunu 1, 2, 3 alalım
+// ortalamasını yazdıralım
+
+// console.log('Not ortalaman: ' + (Number(prompt('1. Notunuz:')) + Number(prompt('2. Notunuz')) + Number(prompt('3. Notunuz'))) / 3);
+
+// bir üçgenin iç açıları toplamı 180'dir.
+// birinci ve ikinci açıyı girelim üçüncüyü yazdıralım
+
+// console.log('Üçüncü açı : ' + (180 - (Number(prompt('1.Açıyı girin:')) + Number(prompt('2.Açıyı girin:'))) + ' ' + 'derecedir.'));
+
+// NaN hatası -> not a number demek
+
+// Değişkenler - Variables
+// Program ya da Kod yazarken içine geçici olarak veri sakladığımız alanlar
+// Değişkenlerin genel amacı -> veriyi tekrar tekrar kullanabilmek ve erişebilmek
+// Bonus özellik -> kod okunurluğunu arttırması
+// Geçici değimiz yer -> ram
+
+// Değişkenlerin mutlaka isimleri olur
+// programcılıkta değişken isimlendirme stardartları vardır.
+// programcılıkta clean code -> readable code yazmanız çok önemli
+
+// değişken tanımlamanın anahtar kelimesi "let"
+// artık "var" kesinlikle kullanmıyoruz. Büyük problem çıkartıyor modern js içinde yer almıyor
+// TarTarayıcı çalıştırıyor o da geriye dönük uyumluluktan dolayı
+
+// Değişken tanımlama yöntemi
+// değişken anahtar kelimesi + değişken ismi + atama operatörü + değer 
+
+// let ad = 'Nihat';
+// JS'de değişkenler camelCase formatında isimlendirilir
+// En önemli olaylarından bir tanesi TÜRKÇE KARAKTER KESİNLİKLE KULLANMAMALIYIZ !!!
+// Diğer bir önemli konu -> ardışık değişken isimleri %99 oranında hatalı isimlendirme yapıyorsunuz demektir.
+
+// console.log(ad);
+
+// eşittirin sol tarafı ve sağ tarafı çok önemli
+
+// let ad;
+// console.log(ad);
+
+// ad = 'Nihat';
+// console.log(ad);
+
+// let isim = prompt('Adınız ?');
+// // console.log(isim);
+// let soyad = prompt('Soyadınız ?');
+
+// // console.log(isim + soyad);
+
+// let tamAd = isim + ' ' + soyad;
+// console.log('Hoşgeldin ' + tamAd);
+
+// let data;
+// // let data = 'veri';
+// console.log(data);
+
+// tanımlama yapılmadıysa veya veri olmadıysa veya veri içinde yoksa
+
+// undefined -> tanımsız
+// null -> boş değer
+// en güzel örneği tuvalet kağıdı örneği
+
+// değişken ismi verirken ardığık sayıyla değişken ismi vermeyiz
+// örnek olsun diye şuan kullanacağım
+
+let name = 'Nihat';
+let name2 = name;
+let name3 = name2;
+
+// name ismi vs code tarafından daha önceden revize edilmiş bir kelimedir.
+// kullanam diye üstünü çiziyor fakat böyle bir şey yok gerekte yok
+
+// alert('tık tık')
+
+console.log(name);
+console.log(name2);
+console.log(name3);
+
+name = 'Leo';
+console.log(name);
+console.log(name3);
