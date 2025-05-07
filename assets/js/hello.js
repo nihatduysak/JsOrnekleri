@@ -253,3 +253,5 @@ console.log(name3);
 name = 'Leo';
 console.log(name);
 console.log(name3);
+
+// hasan için mevcut kodları güncelleme ve github'a gönderme
