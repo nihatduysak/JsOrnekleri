@@ -244,7 +244,7 @@ let name3 = name2;
 // name ismi vs code tarafından daha önceden revize edilmiş bir kelimedir.
 // kullanam diye üstünü çiziyor fakat böyle bir şey yok gerekte yok
 
-// alert('tık tık')
+// alert('tık tık');
 
 console.log(name);
 console.log(name2);
@@ -254,4 +254,199 @@ name = 'Leo';
 console.log(name);
 console.log(name3);
 
+console.clear();
+
 // hasan için mevcut kodları güncelleme ve github'a gönderme
+
+// console.log('Üçüncü açı: ' + (180 - (Number(prompt('1.açıyı girin')) + Number(prompt('2.açıyı girin')))) + ' ' + 'derecedir');
+
+// String, Number, Boolean
+// Value Type -> Değer tipi veri
+// Referance Type -> Ters köşeye düşeceğiz
+
+// let this = 'hop';
+// let new = 'hey';
+
+// constant -> sabit
+// const
+// değişken birkere tanımlanır bir daha değişmez
+
+const TCKN = 1123123123;
+// değiştirilemeyen değerler için const kullanıyoruz
+
+// içeriğini değişmekten korumak istediğimiz verileri
+// burada saklarız. Aynı zamanda sadece okunma odaklı olduğu için
+// içerisindeki büyük veriye de daha hızlı erişebiliriz
+
+// çok uzunca bir süre endişe etmemize gerek yok
+// Karar veremediğiniz durumlarda direkt olarak let kullanabilirsiniz
+
+// değişkenleri tiplerini kontrol etmek için
+// typeof kullanıyoruz
+
+// let ad = 'Nihat';
+// let yas = 36;
+// let resitMi = true;
+
+// API -> Sunum -> Aleyna
+// API'ın çalışma konseptini anlasak gerisi kolay
+
+// NaN -> Not a Number
+
+// yas = yas + 4;
+
+// yas += 4;
+// console.log(yas);
+
+// yas++; // birer birer arttırır
+// console.log(yas);
+
+// yas--; // birer birer düşürür / azaltır
+// console.log(yas);
+
+// ++yas; // ikisi arasındaki farkı araştırın, keşfedin -> araştırma notu
+
+
+// let mesaj = 'Merhaba';
+// mesaj += ', Nasılsınız ?';
+// console.log(mesaj);
+
+// // bool tipi değişkenler için isimlendirme önemlidir
+// // değişken ismi bool sonucunu ifade edecek şekilde
+// // verilmelidir
+
+// let isStudent = true;
+// let ogrenciMi = true;
+
+// let resitMi = false;
+
+// karşılaştırma operatörleri bir veya birden fazla durumu karşılaştırıp
+// karşılaştırma sonucunda evet veya hayır -> true veya false bilgisi verir
+// karşılaştırma operatörü kullandığımızda veri tipimiz mutlaka bool olur.
+
+console.clear();
+
+// Karşılaştırma Operatörleri
+
+// eşitlik == veya === (tip kontrolü)
+// eşit değildir != veya !== (tip kontrol)
+// büyüktür >
+// küçüktür <
+// büyük eşittir >=
+// küçük eşittir <=
+// ternary ? -> bunu daha sonra anlatacağım
+
+// let age = 70;
+// let gender = 'Man';
+// let legalAge = 18;
+
+// console.log(age >= legalAge);
+
+// let isAdult = age >= legalAge;
+// console.log(isAdult);
+
+// eğer bool ifadelerin başına ! (ünlem) gelirse ya da eklersek ya da koyarsak
+// durumu tersine çevirir
+// bool sadece true veya false olur
+
+// Mantıksal Operatörler
+
+// && -> ve operatörü -> hepsi true olmalı
+// || -> veya operatörü -> herhangi biri true olsa yeter 
+// | -> pipe alt + < > / option + < >
+// Mantıksal operatörleri boolean döner
+// mantıksal operatörlerin içinde boolean veya karşılaştırma operatörleri kullanırız
+
+// tip okunurluğunu arttırmak için
+// parantez içine alabiliriz
+
+// let askereGidebilirMi = (age >= 18) && (gender === 'Man');
+
+// let topluTasimaUcretsizMi =  (age <= 6) || (age >= 65);
+// console.log(topluTasimaUcretsizMi);
+
+// let inputAge = prompt('Yaşınız');
+// inputAge = Number(inputAge);
+// console.log(inputAge);
+
+// let isUserAdult = inputAge >= 18;
+// console.log(isUserAdult);
+
+// let firstName = prompt('Adınız');
+// let lastName = prompt('Soyadınız');
+// let age = prompt('Yaşınız');
+
+// console.log('Merhaba ' + firstName + ' ' + lastName + ' ' + age + ' ' + 'yaşındasın');
+
+// backtick `` -> win alt gr + , -> mac opt + ,
+// ' tek tırnak ile karıştırmayın !!
+// backtick yazdıktan sonra string değer alacak ise onu yazarız daha sonra
+// değişken kullanacak isek $ ve {} ile kullanırız. Süslü parantez içine değişkenleri yazarız
+
+// console.log(`Merhaba ${firstName} ${lastName} ${age} yaşındasın`);
+
+// let kdv = 1.20;
+// let hesaplanacakKdv = prompt('Hesaplamak istediğiniz tutarı yazınız');
+// let toplam = hesaplanacakKdv * kdv;
+
+// console.log(`Hesaplanan kdv : ${toplam} TL'dir.`);
+
+// Koşullar 
+// if, else if, else
+
+// if -> eğer
+// else if -> değilse eğer
+// else -> değilse
+
+if(true) {
+  // if'in koşulu yani parantez içi true olması durumunda
+  // scope yani süslü parantez içindeki kodu çalıştır diyorum
+}
+
+// {} -> scope
+
+// let inputName = prompt('Adınız');
+
+// if(inputName === 'Nihat') {
+//   console.log(`hoşgeldin ${inputName}`);
+
+//   // süslü parantez yani scope içine kod yazdığımızda
+//   // bu kısma scope (kapsama alanı) diyoruz. Koşul
+//   // gerçekleştiğinde bu scope içindeki kodlar çalışır.
+// } else {
+
+//   // if içindeki koşul sağlanmaz ise buradaki kod çalışır
+//   console.log('Seni tanıyamadım kusura bakma');
+// }
+
+// if(inputName === 'Orhan') {
+//   console.log(`Hoşgeldiniz ${inputName} hocam`);
+// } else if (inputName === 'Nihat') {
+//   console.log(`Hoşgeldin ${inputName}`)
+// } else if (inputName === 'Leo') {
+//   console.log(`Hoşgeldin ${inputName} pisi pisi bey`);
+// } else {
+//   console.log('Hoop geçiş yok sen kimsin ???');
+// }
+
+// if(inputName === 'Orhan' || inputName === 'Nihat' ) {
+//   console.log(`Hoşgeldiniz ${inputName} hocam`);
+// } else if (inputName === 'Mehmet' || inputName === 'Hasan') {
+//   console.log(`Hoşgeldiniz ${inputName} bey `)
+// } else if (inputName === 'Leo') {
+//   console.log(`Hoşgeldin ${inputName} pisi pisi bey`);
+// } else {
+//   console.log('Hoop geçiş yok sen kimsin ???');
+// }
+
+// let inputKullaniciSecim = prompt('Kırmızı başlıklı kız yolda yürüyor kaşısına 2 yol çıktı.\n1)Köprüden mi geçsin ?\n2)Sahilden mi gitsin');
+
+// if (inputKullaniciSecim === '1') {
+//   console.log('Köprüden geçerken gıcırtı sesleri geldi köprü çökmek üzere');
+// } else if (inputKullaniciSecim === '2') {
+//   console.log('Sahilde çok güzel bir hava var. Tam yürümelik');
+// }
+
+// let kullaniciSecim = prompt('Taş, Kağıt, Makas');
+
+let bilgisayarSecimi = ['Taş', 'Kağıt', 'Makas'].at(Math.floor(Math.random() * 3));
