@@ -161,3 +161,4 @@ console.log(teams.concat(playerList));
 // filter() -> şarta uyan elemanlarla yeni bir dizi oluşturur
 // find() -> şarta uyan ilk elemanı getirir ya da döner
 // reduce() -> Tüm elemanları tek bir değere dingirger (4 işlem vb....)
+
